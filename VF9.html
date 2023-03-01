@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/vf.png" />
+    <title>VF9 - Vinfast Việt Nam</title>
+
+    <!-- Mulish font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Carousel -->
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/dist/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/VFe34.css" />
+    <link rel="stylesheet" href="./styles/VF9.css" />
+  </head>
+
+  <body>
+    <!-- header: begin -->
+    <section id="header">
+      <div class="container">
+          <i onclick="toggleMiniMenu()" class="fas fa-bars menu-mini-icon"></i>
+          <a href="./trang-chu.html" class="logo">
+              <img src="./images/logo-vinfast.png" alt="">
+          </a>
+
+          <ul class="navbar">
+              <li class="navbar-item dropdown">
+                  <a class="active" href="">Ô tô VinFast</a>
+                  <i class="fas fa-angle-down active"></i>
+                  <div class="submenu-wrap">
+                      <ul class="submenu">
+                          <i class="fas fa-sort-up"></i>
+                          <li class="submenu-item"><a href="./VFe34.html">VF e34</a></li>
+                          <li class="submenu-item"><a href="./VF5.html">VF5</a></li>
+                          <li class="submenu-item"><a href="./VF8.html">VF8</a></li>
+                          <li class="submenu-item"><a class="active" href="">VF9</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li class="navbar-item"><a href="./bang-gia.html">Bảng giá</a></li>
+              <li class="navbar-item"><a href="./lien-he.html">Liên hệ</a></li>
+              <li class="navbar-item"><a href="./tra-gop.html">Trả góp</a></li>
+          </ul>
+
+          <a class="phone" href="tel:0929798333">
+              <i class="fas fa-phone-alt"></i>
+              <span class="phone__number">0929-798-333</span>
+          </a>
+
+          <div class="navbar-mini-block">
+              <ul class="navbar-mini">
+                  <svg onclick="toggleMiniMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+                  <li onclick="toggleSubmenu(this)" class="navbar-mini-item dropdown active">
+                      <a class="active">Ô tô VinFast</a>
+                      <i class="fas fa-angle-down"></i>
+                      <i class="fas fa-angle-up"></i>
+                      <ul class="submenu-mini">
+                          <li class="submenu-mini-item"><a href="./VFe34.html">VF e34</a></li>
+                          <li class="submenu-mini-item"><a href="./VF5.html">VF5</a></li>
+                          <li class="submenu-mini-item"><a href="./VF8.html">VF8</a></li>
+                          <li class="submenu-mini-item active"><a href="">VF9</a></li>
+                      </ul>
+                  </li>
+                  <li class="navbar-mini-item"><a href="./bang-gia.html">Bảng giá</a></li>
+                  <li class="navbar-mini-item"><a href="./lien-he.html">Liên hệ</a></li>
+                  <li class="navbar-mini-item"><a href="./tra-gop.html">Trả góp</a></li>
+              </ul>
+  
+              <div onclick="toggleMiniMenu()" class="navbar-mini-wrapper"></div>
+          </div>
+      </div>
+  </section>
+  <!-- header: end -->
+
+    <!-- vfe34-banner: begin -->
+    <section id="vfe34-banner">
+      <img src="./images/vf9bbanner.webp" alt="">
+    </section>
+    <!-- vfe34-banner: end -->
+
+    <!-- navigation: begin -->
+    <section id="navigation">
+      <div class="container">
+        <div class="navigation-left">
+          <img src="./images/vf.png" alt="" class="navigation-left__logo" />
+          <span class="navigation-left__txt">VF 9</span>
+        </div>
+        <div class="navigation-right">
+          <a href="#overview" class="navigation-item">
+            <div class="navigation-item__logo">
+              <img src="./images/ic_topnav1.png" alt="" />
+            </div>
+            <span class="navigation-item__txt">Tổng quan</span>
+          </a>
+          <a href="#offer" class="navigation-item">
+            <div class="navigation-item__logo">
+              <img src="./images/ic_topnav2.png" alt="" />
+            </div>
+            <span class="navigation-item__txt">Ưu đãi</span>
+          </a>
+          <a href="#specification" class="navigation-item">
+            <div class="navigation-item__logo">
+              <img src="./images/ic_topnav3.png" alt="" />
+            </div>
+            <span class="navigation-item__txt">Thông số</span>
+          </a>
+          <a href="#station" class="navigation-item">
+            <div class="navigation-item__logo">
+              <img src="./images/ic_topnav4.png" alt="" />
+            </div>
+            <span class="navigation-item__txt">Trạm sạc</span>
+          </a>
+          <a href="#explore" class="navigation-item">
+            <div class="navigation-item__logo">
+              <img src="./images/ic_topnav5.png" alt="" />
+            </div>
+            <span class="navigation-item__txt">Khám phá</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- navigation: end -->
+
+    <!-- overview: begin -->
+    <section id="overview">
+      <div class="container">
+        <div class="overview-left">
+          <h2 class="overview__name"><span>VINFAST VF 9</span></h2>
+          <h3 class="overview__slogan">DẤU ẤN NGƯỜI DẪN ĐẦU</h3>
+          <p class="overview__price">
+            Gía niêm yết: <span>1.443.200.000 đ</span>
+          </p>
+          <p class="overview__voucher">
+            Áp dụng voucher <span>200tr</span> giá chỉ còn<br />
+            <span>490.000.000 đ</span>
+          </p>
+          <div class="overview-action">
+            <button data-bs-toggle="modal" data-bs-target="#registerModal" class="overview-action__test">
+              <span>ĐĂNG KÝ LÁI THỬ</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#buyModal" class="overview-action__buy">
+              MUA XE
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="overview-right">
+          <div class="owl-carousel owl-carousel-vfe34">
+            <div class="slider-item">
+              <img src="./images/vf9-1.webp" alt="" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/vf9-2.webp" alt="" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/vf9-3.webp" alt="" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/vf9-4.webp" alt="" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/vf9-5.webp" alt="" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/vf9-6.webp" alt="" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/vf9-7.webp" alt="" />
+            </div>
+            <div class="slider-item">
+              <img src="./images/vf9-8.webp" alt="" />
+            </div>
+          </div>
+          <!-- <ul id="carousel-custom-dots" class="owl-dots">
+            <li class="owl-dot"><img src="./images/vf8-dot-1.png" alt="" /></li>
+            <li class="owl-dot"><img src="./images/vf8-dot-2.jpeg" alt="" /></li>
+            <li class="owl-dot"><img src="./images/vf8-dot-3.jpeg" alt="" /></li>
+            <li class="owl-dot"><img src="./images/vf8-dot-4.jpeg" alt="" /></li>
+            <li class="owl-dot"><img src="./images/vf8-dot-5.jpeg" alt="" /></li>
+            <li class="owl-dot"><img src="./images/vf8-dot6.jpeg" alt="" /></li>
+            <li class="owl-dot"><img src="./images/vf8-dot-7.jpeg" alt="" /></li>
+            <li class="owl-dot"><img src="./images/vf8-dot-8.jpeg" alt="" /></li>
+          </ul> -->
+        </div>
+      </div>
+    </section>
+    <!-- overview: end -->
+
+    <!-- explore: begin -->
+    <section id="explore">
+      <div class="container">
+        <h2 class="explore__title"><span>ƯU ĐIỂM VƯỢT TRỘI VF 9</span></h2>
+        <div class="explore-body">
+          <div class="explore-description">
+            <h4 class="explore-description__title">VINFAST VF9 (VF E36)</h4>
+            <p class="explore-description__txt">
+              Chúng tôi đã kết hợp những gì tốt nhất trong thiết kế, sản xuất và
+              công nghệ để tạo ra những chiếc SUV thuần điện hoàn toàn mới VF 8
+              và VF 9. Với thiết kế đặt con người làm trung tâm, chúng tôi đã áp
+              dụng công nghệ tiên tiến để phục vụ một mục tiêu đơn giản là cải
+              thiện cuộc sống của những người lái xe VinFast và sự sống trên
+              hành tinh của chúng ta.
+            </p>
+            <p class="explore-description__txt">
+              Tự hào khi ra mắt tại thị trường quốc tế mẫu SUV phong cách couple
+              sở hữu thiết kế đẳng cấp, tiêu chuẩn an toàn cao, tiện nghi thoải
+              mái, tính năng thông minh tới những thông số kỹ thuật ấn tượng so
+              với những dòng xe cùng phân khúc.
+            </p>
+          </div>
+          <div class="explore-img">
+            <img src="./images/vf9-6.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- explore: end -->
+
+    <!-- vfe34-slider: begin -->
+    <section id="vfe34-slider">
+      <div class="owl-carousel owl-carousel-vfe34-slider">
+        <div class="slider-item">
+          <img src="./images/vf9banner1.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- vfe34-slider: end -->
+
+    <!-- offer: begin -->
+
+    <!-- specification: begin -->
+    <section id="specification">
+      <div class="container">
+        <h2 class="specification__title">
+          <span>KIỂU DÁNG THIẾT KẾ</span>
+        </h2>
+        <div class="specification-body">
+          <p>
+            Mẫu SUV cỡ E – VF 9 có thiết kế mạnh mẽ với kích thước tiêu chuẩn là
+            5.120 x 2.000 x 1.721 (mm) (tương đương 16,79 x 6,56 x 5,65 (feet)).
+            Kích thước xe tối ưu kết hợp với hệ dẫn động AWD giúp tăng khả năng
+            di chuyển linh hoạt, đem lại cảm giác cầm lái chắc chắn cho người sử
+            dụng.
+          </p>
+          <p>
+            Theo Giám đốc thiết kế của VinFast – Ông David Lyon, VF 9 dành cho
+            những người yêu thích sử dụng SUV cỡ lớn. Ngoài vẻ đẹp khỏe khoắn và
+            tiện dụng, các chi tiết thiết kế còn cho phép cải thiện tính năng
+            khí động học cũng như mở rộng phạm vi vận hành của xe điện bao gồm:
+          </p>
+          <p>
+            – “Màn gió” nằm ở vị trí phần mui và đầu xe có tác dụng chuyển hướng
+            không khí từ các khu vực tạo lực cản cao.
+          </p>
+          <p>– Tay nắm cửa, kính và đường viền phẳng với thân xe.</p>
+          <p>– Mái dốc khí động học và kính bên thuôn.</p>
+          <p>
+            Tương tự như những dòng xe khác của VinFast, đặc điểm nhận diện
+            thương hiệu độc đáo nằm ở khung chiếu sáng từ logo chữ “V” – biểu
+            trưng cho Việt Nam, Vingroup, VinFast. Thiết kế 2 chữ V xếp chồng
+            lên nhau tạo nên hiệu ứng 3D có chiều sâu kèm theo tone màu bạc tinh
+            tế, sang trọng tạo nên cảm nhận liên tưởng về một hãng xe điện thời
+            trang và phong cách.
+          </p>
+          <img src="./images/thietkevf9-1.png" alt="" />
+        </div>
+
+        <h2 class="specification__title">
+          <span>THIẾT KẾ NỘI THẤT</span>
+        </h2>
+        <div class="specification-body">
+          <p>
+            VF 9 có thiết kế nội thất rộng rãi, mềm mại tương ứng với kích thước
+            của xe. Phiên bản Eco có 7 chỗ ngồi, ghế “bench” hàng 2 có 3 chỗ.
+            Bản Plus có thêm 2 lựa chọn: 7 chỗ ngồi với ghế “bench” hàng 2 có 3
+            chỗ giống bản Eco hoặc 6 chỗ ngồi với hàng ghế thứ 2 tách rời kiểu
+            thương gia. Ngoài ra, hàng ghế thứ 3 có thêm một cửa sổ trời giúp
+            hành khách có thể quan sát bên ngoài và cũng cảm thấy thoáng đãng
+            hơn. Hàng ghế trước và sau đều có khoảng cách rộng vừa đủ để tạo sự
+            thoải mái cho người lái và hành khách.
+          </p>
+          <img src="./images/vf9thietke2.jpeg" alt="" />
+          <p>
+            Theo dự kiến, VF 9 sẽ có 2 phiên bản pin tương ứng với mục tiêu dự
+            kiến của quãng đường di chuyển là 485km và 680km cho một lần sạc
+            đầy.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- specification: end -->
+
+    <!-- details: begin -->
+    <section id="details">
+      <div class="container">
+        <div class="details-item">
+          <h3 class="item__header">HỆ THỐNG TRUYỀN ĐỘNG</h3>
+          <p class="item__txt">
+            Theo dự kiến, với 2 động cơ điện có công suất tối đa 300kW – 402HP kết hợp với mô-men xoắn cực đại 640Nm, VF 9 có thể tăng tốc 0 – 100 km/h trong thời gian khoảng 6,5 giây. Hệ dẫn động bốn bánh toàn thời gian giúp người lái tập trung hơn nhờ vào việc xe tự quyết định phân bổ mô-men xoắn tới trục nào khi cần độ bám đường.
+          </p>
+        </div>
+        <div class="details-item">
+          <h3 class="item__header">TÍNH NĂNG AN TOÀN</h3>
+          <h4 class="item__title">An toàn 5 sao</h4>
+          <p class="item__txt">
+            Theo dự kiến, xe VF 9 sẽ đạt chứng nhận tiêu chuẩn chất lượng và độ
+            an toàn ở mức cao nhất, bao gồm:
+          </p>
+          <p class="item__txt">
+            – Chương trình đánh giá tính năng an toàn ô tô mới dành cho các nước
+            thuộc khu vực Đông Nam Á: 5 sao ASEAN NCAP
+          </p>
+          <p class="item__txt">
+            – Chương trình đánh giá an toàn xe hơi châu Âu: 5 sao EURO NCAP
+          </p>
+          <p class="item__txt">
+            – Chương trình đánh giá an toàn giao thông đường bộ của Cơ quan an
+            toàn Giao thông Quốc gia Mỹ: 5 sao NHTSA 2.2.
+          </p>
+          <h4 class="item__title">Hệ thống túi khí</h4>
+          <p class="item__txt">
+            Để bảo vệ sự an toàn cho hành khách và giảm thiểu các chấn thương khi gặp va chạm mạnh, VF 9 được trang bị đầy đủ hệ thống 11 túi khí bao gồm:
+          </p>
+          <ul class="item__txt">
+            <li>2 túi khí trước lái và hành khách phía trước.</li>
+            <li>2 túi khí rèm.</li>
+            <li>2 túi khí bên hông hàng ghế trước.</li>
+            <li>2 túi khí bên hông hàng ghế sau.</li>
+            <li>2 túi khí bảo vệ chân hàng ghế trước.</li>
+            <li>1 túi khí trung tâm hàng ghế trước</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- details: end -->
+
+    <!-- station: begin -->
+    <section id="station">
+      <div class="container">
+        <h2 class="station__title">
+          <span>HỆ THỐNG TRẠM SẠC XE ĐIỆN VINFAST QUY HOẠCH 2022</span>
+        </h2>
+        <div class="station-body">
+          <div class="station-item">
+            <div class="station-item__img">
+              <img src="./images/station1.jpeg" />
+            </div>
+            <p class="station-item__txt">
+              Hơn 40.000 cổng sạc<br /><span>cho ô tô và xe máy điện.</span>
+            </p>
+          </div>
+          <div class="station-item">
+            <div class="station-item__img">
+              <img src="./images/station2.jpeg" />
+            </div>
+            <p class="station-item__txt">
+              Phủ khắp 63 tỉnh thành<br /><span
+                >và 100% cao tốc/quốc lộ huyết mạch.</span
+              >
+            </p>
+          </div>
+          <div class="station-item">
+            <div class="station-item__img">
+              <img src="./images/station3.jpeg" />
+            </div>
+            <p class="station-item__txt">
+              Thiết bị sạc đa dạng, hiện đại<br /><span
+                >theo tiêu chuẩn Châu Âu, đáp ứng hành trình thuận tiện và an
+                tâm cho khách hàng.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- station: end -->
+
+    <!-- vfe34-banner2: begin -->
+    <section id="vfe34-banner2">
+      <img src="./images/bg_contact_top-scaled.jpeg" alt="" />
+      <div class="vfe34-banner-content">
+        <h3 class="content__title">HÃY ĐẶT DẤU TIÊN PHONG CHO</h3>
+        <p class="content__txt">KỶ NGUYÊN XE ĐIỆN THÔNG MINH TẠI VIỆT NAM</p>
+      </div>
+    </section>
+    <!-- vfe34-banner2: end -->
+
+    <!-- gallery: begin -->
+    <section id="gallery">
+      <div class="container">
+        <div class="gallery-list">
+          <h2 class="gallery__title">HÌNH ẢNH VINFAST VF E36</h2>
+          <div class="gallery-block">
+            <div class="gallery-item">
+              <img src="./images/galleryvf9-1.jpeg" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./images/galleryvf9-2.jpeg" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./images/galleryvf9-3.jpeg" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./images/galleryvf9-4.jpeg" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./images/galleryvf9-5.jpeg" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./images/galleryvf9-6.jpeg" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./images/galleryvf9-7.jpeg" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./images/galleryvf9-8.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery: end -->
+
+    <!-- contact: begin -->
+    <section id="contact-form">
+      <div class="container">
+          <a href="tel:0929798333" class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>Hotline: 0929.798.333</span>
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>ĐẶT LỊCH HẸN</span>
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#buyModal" class="contact-item">
+              <i class="fas fa-cart-plus"></i>
+              <span>ĐĂNG KÝ MUA XE</span>
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#registerModal" class="contact-item">
+              <i class="fas fa-play"></i>
+              <span>ĐĂNG KÝ LÁI THỬ</span>
+          </a>
+      </div>
+  </section>
+  <!-- contact: end -->
+
+  <!-- modal dang ky lai thu: begin -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="registerForm" onsubmit="submitRegisterForm(event)">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registerModalLabel">ĐĂNG KÝ LÁI THỬ</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Để thuận tiện trong quá trình làm việc, tiết kiệm thời gian & được chăm sóc dịch vụ tốt nhất. Quý khách hãy đăng ký trước tại đây, xin cảm ơn!</p>
+            <label for="">Thông tin nguời đăng ký lái thử</label>
+            <input class="form-control" type="text" id="registerNname" name="registerNname" placeholder="Họ và tên..." required>
+            <input class="form-control" type="number" id="registerPhone" name="registerPhone" placeholder="Số điện thoại..." required>
+            <input class="form-control" type="email" id="registerEmail" name="registerEmail" placeholder="Địa chỉ Email..." required>
+
+            <label for="">Tình trạng Giấy phép lái xe?</label>
+            <select class="form-select" id="license" name="license">
+              <option value="type">- Please choose an option  -</option>
+              <option value="Đã có Giấy phép lái xe">Đã có</option>
+              <option value="Chưa có Giấy phép lái xe">Chưa có</option>
+              <option value="Đang trong quá trình học">Đang trong quá trình học</option>
+              <option value="Khác">Khác...</option>
+            </select>
+
+            <label for="">Ghi chú</label>
+            <input class="form-control" type="text" id="registerNote" name="registerNote" placeholder="Tỉnh, thành phố / Thời gian/ Phiên bản xe...">
+            <p class="noti success" style="color: #cb2a1d; font-weight: 700;"></p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger">Đăng ký lái thử</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal dang ky lai thu: end -->
+
+  <!-- modal dang ky mua xe: begin -->
+  <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="buyForm" onsubmit="submitBuyForm(event)">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="buyModalLabel">ĐĂNG KÝ MUA XE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Để thuận tiện trong quá trình làm việc, tiết kiệm thời gian & được chăm sóc dịch vụ tốt nhất. Quý khách hãy đăng ký trước tại đây, xin cảm ơn!</p>
+              <input class="form-control" type="text" id="buyName" name="buyName" placeholder="Họ và tên..." required>
+              <input class="form-control" type="number" id="buyPhone" name="buyPhone" placeholder="Số điện thoại..." required>
+              <input class="form-control" type="email" id="buyEmail" name="buyEmail" placeholder="Địa chỉ Email..." required>
+              <input class="form-control" type="text" id="buyNote" name="buyNote" placeholder="Ghi chú khác">
+              <p class="noti success" style="color: #cb2a1d; font-weight: 700;"></p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger">ĐĂNG KÝ NGAY</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal dang ky mua xe: end -->
+
+  <!-- modal dat lich hen: begin -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="bookingForm" onsubmit="submitBookingForm(event)">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="bookingModalLabel">ĐẶT LỊCH HẸN VỚI CHÚNG TÔI</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Để thuận tiện trong quá trình làm việc, tiết kiệm thời gian & được chăm sóc dịch vụ tốt nhất. Quý khách hãy đăng ký trước tại đây, xin cảm ơn!</p>
+
+              <select class="form-select mt-3" id="place" name="place">
+                <option value="">- Bạn muốn đặt lịch hẹn tại địa điểm? -</option>
+                <option value="Showroom của chúng tôi">Showroom của chúng tôi</option>
+                <option value="Tại nhà riêng của bạn">Tại nhà riêng của bạn</option>
+                <option value="Chỉ đặt lịch hẹn tư vấn trước qua điện thoại">Chỉ đặt lịch hẹn tư vấn trước qua điện thoại</option>
+              </select>
+
+              <label class="mt-3" for="">Nội dung mà bạn muốn làm việc cùng chúng tôi?</label>
+              <div class="booking-check d-flex flex-wrap">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Tư vấn mua xe" id="check-0">
+                  <label class="form-check-label" for="check-0">
+                    Tư vấn mua xe
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Bảo hiểm" id="check-1">
+                  <label class="form-check-label" for="check-1">
+                    Bảo hiểm
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Bảo dưỡng" id="check-2">
+                  <label class="form-check-label" for="check-2">
+                    Bảo dưỡng
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Trả góp" id="check-3">
+                  <label class="form-check-label" for="check-3">
+                    Trả góp
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Khác" id="check-4">
+                  <label class="form-check-label" for="check-4">
+                    Khác
+                  </label>
+                </div>
+              </div>
+
+              <input class="form-control mt-3" type="text" id="time" name="time" placeholder="Thời gian cuộc hẹn. . . (Vd: 09h sáng 01/01/2021)" required>
+              <input class="form-control" type="text" id="bookingName" name="bookingName" placeholder="Họ và tên..." required>
+              <input class="form-control" type="number" id="bookingPhone" name="bookingPhone" placeholder="Số điện thoại..." required>
+              <input class="form-control" type="email" id="bookingEmail" name="bookingEmail" placeholder="Địa chỉ Email..." required>
+              <input class="form-control" type="text" id="bookingNote" name="bookingNote" placeholder="Ghi chú yêu cầu khác...">
+              <p class="noti success" style="color: #cb2a1d; font-weight: 700;"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="" class="btn btn-danger">ĐẶT LỊCH HẸN</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal dat lich hen: end -->
+
+    <!-- footer: begin -->
+    <section id="footer">
+      <div class="container">
+        <div class="footer-menu">
+          <div class="footer-left">
+            <div class="footer__logo">
+              <img class="logo__vin" src="./images/vf.png" alt="" />
+              <img class="logo__txt" src="./images/vinfast.png" alt="" />
+            </div>
+            <div class="footer-socials">
+              <a class="facebook__icon" href="https://www.facebook.com/VinFastPhamHung?mibextid=LQQJ4d">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  />
+                </svg>
+              </a>
+              <a class="mail__icon" href="mailto:Nhabui1994@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                  /></svg></a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-block">
+              <h4 class="item-header">Về chúng tôi</h4>
+              <ul class="item-list">
+                <li class="item-list__txt">Giới thiệu về VinFast</li>
+                <li class="item-list__txt">Ô tô VinFast</li>
+                <li class="item-list__txt">Tin tức - Sự kiện</li>
+                <li class="item-list__txt">Ưu đãi mới</li>
+              </ul>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="item-header">Ô tô VinFast</h4>
+              <ul class="item-list">
+                <li class="item-list__txt"><a href="./VFe34.html">VinFast VF E34</a></li>
+                  <li class="item-list__txt"><a href="./VF5.html">VinFast VF 5</a></li>
+                  <li class="item-list__txt"><a href="./VF8.html">VinFast VF 8</a></li>
+                  <li class="item-list__txt"><a href="./VF9.html">VinFast VF 9</a></li>
+                </ul>
+              </ul>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="item-header">Hỗ trợ khách hàng</h4>
+              <ul class="item-list">
+                <li class="item-list__txt">Câu hỏi thường gặp</li>
+                <li class="item-list__txt">Hệ thống phân phối</li>
+                <li class="item-list__txt">Đặt lịch bảo dưỡng</li>
+                <li class="item-list__txt">Thông tin liên hệ</li>
+              </ul>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="item-header">Hỗ trợ khách hàng</h4>
+              <ul class="item-list">
+                <li class="item-list__txt">Chính sách & Điều khoản</li>
+                <li class="item-list__txt">Miễn trừ trách nhiệm</li>
+                <li class="item-list__txt">Thỏa thuận đặt cọc</li>
+                <li class="item-list__txt">Chính sách đổi trả</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="footer-navbar">
+          <li class="footer-navbar__item"><a href="./trang-chu.html">Ôtô VinFast</a></li>
+          <li class="footer-navbar__item"><a href="./bang-gia.html">Bảng giá</a></li>
+          <li class="footer-navbar__item"><a href="./lien-he.html">Liên hệ</a></li>
+          <li class="footer-navbar__item"><a href="./tra-gop.html">Trả góp</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- footer:end -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./owlcarousel/dist/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

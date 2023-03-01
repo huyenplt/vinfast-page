@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/vf.png" />
+    <title>Trả góp - Vinfast Việt Nam</title>
+
+    <!-- Mulish font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/installment-cost.css" />
+    <link rel="stylesheet" href="/styles/installment.css" />
+  </head>
+
+  <body>
+    <!-- header: begin -->
+    <section id="header">
+      <div class="container">
+        <i onclick="toggleMiniMenu()" class="fas fa-bars menu-mini-icon"></i>
+        <a href="./trang-chu.html" class="logo">
+          <img src="./images/logo-vinfast.png" alt="" />
+        </a>
+
+        <ul class="navbar">
+          <li class="navbar-item dropdown">
+            <a class="" href="">Ô tô VinFast</a>
+            <i class="fas fa-angle-down"></i>
+            <div class="submenu-wrap">
+              <ul class="submenu">
+                <i class="fas fa-sort-up"></i>
+                <li class="submenu-item"><a href="./VFe34.html">VF e34</a></li>
+                <li class="submenu-item"><a href="./VF5.html">VF5</a></li>
+                <li class="submenu-item"><a href="./VF8.html">VF8</a></li>
+                <li class="submenu-item"><a href="./VF9.html">VF9</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item"><a href="./bang-gia.html">Bảng giá</a></li>
+          <li class="navbar-item"><a href="./lien-he.html">Liên hệ</a></li>
+          <li class="navbar-item"><a class="active" href="">Trả góp</a></li>
+        </ul>
+
+        <a class="phone" href="tel:0929798333">
+          <i class="fas fa-phone-alt"></i>
+          <span class="phone__number">0929-798-333</span>
+        </a>
+
+        <div class="navbar-mini-block">
+          <ul class="navbar-mini">
+            <svg
+              onclick="toggleMiniMenu()"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+              />
+            </svg>
+            <li onclick="toggleSubmenu(this)" class="navbar-mini-item dropdown">
+              <a class="active">Ô tô VinFast</a>
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+              <ul class="submenu-mini">
+                <li class="submenu-mini-item">
+                  <a href="./VFe34.html">VF e34</a>
+                </li>
+                <li class="submenu-mini-item"><a href="./VF5.html">VF5</a></li>
+                <li class="submenu-mini-item"><a href="./VF8.html">VF8</a></li>
+                <li class="submenu-mini-item"><a href="./VF9.html">VF9</a></li>
+              </ul>
+            </li>
+            <li class="navbar-mini-item">
+              <a href="./bang-gia.html">Bảng giá</a>
+            </li>
+            <li class="navbar-mini-item">
+              <a href="./lien-he.html">Liên hệ</a>
+            </li>
+            <li class="navbar-mini-item active"><a href="">Trả góp</a></li>
+          </ul>
+
+          <div onclick="toggleMiniMenu()" class="navbar-mini-wrapper"></div>
+        </div>
+      </div>
+    </section>
+    <!-- header: end -->
+
+    <!-- explore: begin -->
+    <div class="container installment-page" data-select2-id="15">
+      <input id="banking-holder" type="hidden" value="Nhập tên ngân hàng" />
+      <h1 class="installment-page-title">Dự toán chi phí trả góp</h1>
+      <p class="description">
+        Các giá trị dự toán này chỉ mang tính chất tham khảo. Để nhận thông tin
+        cụ thể và chính xác, <br class="d-none d-md-block" />Quý khách vui lòng
+        liên hệ với showroom hoặc đại lý gần nhất.
+      </p>
+      <div class="row flex-column-reverse flex-lg-row" data-select2-id="14">
+        <section id="summary" class="col-12 col-lg-7 d-lg-block summary">
+          <img src="" alt="" class="product-img" style="" />
+          <img class="data-not-load-img" src="./images/logo-xl.png" alt="" />
+          <div id="summaryDetails" class="pr-0 pr-lg-5">
+            <div class="d-flex justify-content-between">
+              <p>
+                Giá xe
+                <span data-field="name" class="text-capitalize">VF 8</span>
+              </p>
+              <b data-field="price"></b>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Trả trước</p>
+              <b data-field="paymentAmount"></b>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <p>Số tiền vay</p>
+              <b data-field="loanAmount"></b>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Lãi suất (%/ năm)</p>
+              <b data-field="interestRate"></b>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between">
+              <p>Số tiền lãi</p>
+              <b data-field="interestPaymentByCustomer"></b>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between pb-0 pb-lg-4">
+              <p>Tổng tiền Vay &amp; Lãi</p>
+              <h4 data-field="total"></h4>
+            </div>
+          </div>
+        </section>
+        <section
+          id="selection"
+          class="selection col-12 col-lg-5"
+          data-select2-id="selection"
+        >
+          <div class="bg-light px-4" data-select2-id="13">
+            <div class="group-input pt-4" data-select2-id="12">
+              <label class="label">Mẫu xe</label>
+              <select
+                onchange="handleChooseCar(this)"
+                id="productList"
+                class="select2 select2-hidden-accessible"
+                data-placeholder="Lựa chọn"
+                data-minimum-results-for-search="Infinity"
+                data-select2-id="productList"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <option
+                  value=""
+                  disabled=""
+                  selected=""
+                  hidden=""
+                  data-select2-id="2"
+                >
+                  Lựa chọn
+                </option>
+                <option value="vfe34" data-select2-id="20">VF E34</option>
+                <option value="vf5" data-select2-id="21">VF5</option>
+                <option value="vf8" data-select2-id="22">VF8</option>
+                <option value="vf9" data-select2-id="23">VF9</option>
+              </select>
+            </div>
+            <div class="group-input" data-select2-id="27">
+              <label class="label">Phiên bản</label>
+              <select
+                onchange="handleChooseVersion(this)"
+                id="editionList"
+                class="select2 select2-hidden-accessible"
+                data-placeholder="Lựa chọn"
+                data-minimum-results-for-search="Infinity"
+                data-select2-id="editionList"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <option
+                  value=""
+                  disabled=""
+                  selected=""
+                  hidden=""
+                  data-select2-id="4"
+                >
+                  Lựa chọn
+                </option>
+              </select>
+            </div>
+            <div class="group-input include-battery" data-select2-id="33">
+              <label class="label">Pin</label>
+              <select
+                onchange="handleChoosePin(this)"
+                id="includeBattery"
+                class="select2 select2-hidden-accessible"
+                data-placeholder="Lựa chọn"
+                data-minimum-results-for-search="Infinity"
+                data-select2-id="includeBattery"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <option value="" disabled="" selected="" data-select2-id="6">
+                  Pin
+                </option>
+                <option value="1" data-select2-id="34">Bao gồm Pin</option>
+                <option value="0" data-select2-id="35">
+                  Không bao gồm Pin
+                </option>
+              </select>
+            </div>
+            <div class="group-input">
+              <label class="label">Thời&nbsp;gian&nbsp;vay&nbsp;</label>
+              <ul id="term" class="term-year">
+                <li data-amount="1">1</li>
+                <li data-amount="2">2</li>
+                <li data-amount="3">3</li>
+                <li data-amount="4">4</li>
+                <li data-amount="5">5</li>
+                <li data-amount="6">6</li>
+                <li data-amount="7">7</li>
+                <li data-amount="8">8</li>
+              </ul>
+            </div>
+            <div class="group-input">
+              <label class="label">Số tiền trả trước</label>
+              <ul id="paymentAmount" class="term-year">
+                <li data-amount="0.1">10%</li>
+                <li data-amount="0.2">20%</li>
+                <li data-amount="0.3">30%</li>
+                <li data-amount="0.4">40%</li>
+                <li data-amount="0.5">50%</li>
+                <li data-amount="0.6">60%</li>
+                <li data-amount="0.7">70%</li>
+                <li data-amount="0.8">80%</li>
+              </ul>
+            </div>
+            <div class="group-input" data-select2-id="40">
+              <label class="label">Ngân&nbsp;hàng</label>
+              <select
+                onchange="handleChooseBank(this)"
+                id="bankList"
+                class="select2 select2-hidden-accessible"
+                data-placeholder="Lựa chọn"
+                data-clear="true"
+                data-interest="%/năm"
+                data-select2-id="bankList"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <option
+                  value=""
+                  disabled=""
+                  selected=""
+                  hidden=""
+                  data-select2-id="10"
+                >
+                  Lựa chọn
+                </option>
+                <option value="0.105" data-bank="MB BANK" data-select2-id="51">
+                  Ngân Hàng TMCP Quân Đội (MB BANK) - 10.50 %/năm
+                </option>
+                <option value="0.095" data-bank="BIDV" data-select2-id="52">
+                  Ngân Hàng TMCP Phát Triển và Đầu Tư Việt Nam (BIDV) - 9.50
+                  %/năm
+                </option>
+                <option
+                  value="0.1"
+                  data-bank="VIETCOMBANK"
+                  data-select2-id="55"
+                >
+                  Ngân Hàng TMCP Ngoại Thương Việt Nam (VIETCOMBANK) - 10.00
+                  %/năm
+                </option>
+                <option
+                  value="0.11"
+                  data-bank="TECHCOMBANK"
+                  data-select2-id="56"
+                >
+                  Ngân Hàng TMCP Kỹ Thương Việt Nam (TECHCOMBANK) - 11.00 %/năm
+                </option>
+                <option
+                  value="0.09"
+                  data-bank="SHINHANBANK"
+                  data-select2-id="57"
+                >
+                  Ngân Hàng TNHH MTV Shinhan Việt Nam (SHINHANBANK) - 9.00 %/năm
+                </option>
+                <option value="0.12" data-bank="TP BANK" data-select2-id="58">
+                  Ngân Hàng TMCP Tiên Phong (TP BANK) - 12.00 %/năm
+                </option>
+                <option value="0.13" data-bank="VPBANK" data-select2-id="62">
+                  Ngân Hàng TMCP Việt Nam Phát Triển Thịnh Vượng (VPBANK) -
+                  13.00 %/năm
+                </option>
+              </select>
+            </div>
+            <div class="group-input">
+              <label class="label">Lãi suất</label>
+              <div class="d-flex">
+                <input
+                  id="interestRate"
+                  type="number"
+                  pattern="\d*"
+                  inputmode="decimal"
+                  step="0.1"
+                  placeholder=""
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="pb-4 d-none d-lg-block">
+              <button class="btn btn-cal" type="input" data-bs-toggle="modal" data-bs-target="#detailModal">
+                Lịch trả góp chi tiết
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row flex-column-reverse flex-lg-row">
+        <div id="notice" class="col-12 col-lg-7"></div>
+        <div class="col py-4 d-block d-lg-none">
+          <button class="btn btn-cal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Lịch trả góp chi tiết
+          </button>
+        </div>
+      </div>
+      <section id="details" class="details">
+        <div
+          class="modal fade"
+          id="detailModal"
+          tabindex="-1"
+          aria-hidden="true"
+          aria-labelledby="detailModalLabel"
+        >
+          <div class="modal-dialog" style="min-width: 1600px;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="d-flex">
+                  <div class="d-lg-flex justify-content-between pr-lg-4 w-100">
+                    <h3 id="detailModalLabel">
+                      Bảng dự toán chi phí <br class="d-md-none" />trả góp từng
+                      tháng
+                    </h3>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="table-responsive dragscroll">
+                  <table class="table table-installment">
+                    <thead>
+                      <tr>
+                        <th>Kỳ thanh toán</th>
+                        <th>Dư nợ đầu kỳ</th>
+                        <th>Trả nợ gốc</th>
+                        <th>Trả lãi</th>
+                        <th
+                          data-field="interestPaymentByVinFast"
+                          class="d-none"
+                        >
+                          VinFast hỗ trợ
+                        </th>
+                        <th>Tổng thanh toán</th>
+                        <th>Dư nợ cuối kỳ</th>
+                        <th class="text-left d-none" data-field="extraCost">
+                          Chi Phí VinFast hỗ trợ lãi suất trong các năm cuối
+                          vượt quá 10,5% (giả định 12%)
+                        </th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+              <div class="modal-body" style="height: 493.762px">
+                <div class="table-responsive dragscroll">
+                  <table class="table table-installment" id="installmentTable">
+                    <tbody>
+                      <tr class="d-none">
+                        <td data-field="paymentPeriod">Tháng {0}</td>
+                        <td data-field="openingBalance"></td>
+                        <td data-field="principalPayment"></td>
+                        <td data-field="interestPaymentByCustomer"></td>
+                        <td data-field="interestPaymentByVinFast"></td>
+                        <td data-field="totalAmount"></td>
+                        <td data-field="closingBalance"></td>
+                        <td data-field="extraCost"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- explore: end -->
+
+    <!-- footer: begin -->
+    <section id="footer">
+      <div class="container">
+        <div class="footer-menu">
+          <div class="footer-left">
+            <div class="footer__logo">
+              <img class="logo__vin" src="./images/vf.png" alt="" />
+              <img class="logo__txt" src="./images/vinfast.png" alt="" />
+            </div>
+            <div class="footer-socials">
+              <a
+                class="facebook__icon"
+                href="https://www.facebook.com/VinFastPhamHung?mibextid=LQQJ4d"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  />
+                </svg>
+              </a>
+              <a class="mail__icon" href="mailto:Nhabui1994@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-block">
+              <h4 class="item-header">Về chúng tôi</h4>
+              <ul class="item-list">
+                <li class="item-list__txt">Giới thiệu về VinFast</li>
+                <li class="item-list__txt">Ô tô VinFast</li>
+                <li class="item-list__txt">Tin tức - Sự kiện</li>
+                <li class="item-list__txt">Ưu đãi mới</li>
+              </ul>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="item-header">Ô tô VinFast</h4>
+              <ul class="item-list">
+                <li class="item-list__txt">
+                  <a href="./VFe34.html">VinFast VF E34</a>
+                </li>
+                <li class="item-list__txt">
+                  <a href="./VF5.html">VinFast VF 5</a>
+                </li>
+                <li class="item-list__txt">
+                  <a href="./VF8.html">VinFast VF 8</a>
+                </li>
+                <li class="item-list__txt">
+                  <a href="./VF9.html">VinFast VF 9</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="item-header">Hỗ trợ khách hàng</h4>
+              <ul class="item-list">
+                <li class="item-list__txt">Câu hỏi thường gặp</li>
+                <li class="item-list__txt">Hệ thống phân phối</li>
+                <li class="item-list__txt">Đặt lịch bảo dưỡng</li>
+                <li class="item-list__txt">Thông tin liên hệ</li>
+              </ul>
+            </div>
+
+            <div class="footer-block">
+              <h4 class="item-header">Hỗ trợ khách hàng</h4>
+              <ul class="item-list">
+                <li class="item-list__txt">Chính sách & Điều khoản</li>
+                <li class="item-list__txt">Miễn trừ trách nhiệm</li>
+                <li class="item-list__txt">Thỏa thuận đặt cọc</li>
+                <li class="item-list__txt">Chính sách đổi trả</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="footer-navbar">
+          <li class="footer-navbar__item">
+            <a href="./trang-chu.html">Ôtô VinFast</a>
+          </li>
+          <li class="footer-navbar__item">
+            <a href="./bang-gia.html">Bảng giá</a>
+          </li>
+          <li class="footer-navbar__item">
+            <a href="./lien-he.html">Liên hệ</a>
+          </li>
+          <li class="footer-navbar__item">
+            <a href="">Trả góp</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- footer:end -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
