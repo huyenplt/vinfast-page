@@ -1,0 +1,11 @@
+#vfe34-slider .owl-nav button {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    opacity: .8;
+}
+
+#vfe34-slider .owl-nav button i {
+    color: #000;
+}

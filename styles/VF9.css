@@ -1,0 +1,129 @@
+#explore .explore-body {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#explore .explore-description {
+    padding-right: 30px;
+    width: 50%;
+}
+
+#explore .explore-img {
+    width: 50%;
+}
+
+#explore .explore-description__title {
+    color: #cb2a1d;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#explore .explore-description__txt {
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+#vfe34-slider .owl-nav {
+    display: none;
+}
+
+#specification {
+    background-image: none;
+}
+
+#specification .specification__title {
+    color: #cb2a1d;
+}
+
+#specification .specification__title span {
+    background: #fff;
+}
+
+#specification .specification__title::before {
+    background: #FBEBE9;
+}
+
+#specification .specification-body {
+    margin-bottom: 50px;
+}
+
+#specification .specification-body p {
+    line-height: 1.6;
+    margin: 16px 0;
+    width: 100%;
+}
+
+#details .container {
+    display: block;
+}
+
+#details .details-item {
+    margin-bottom: 44px;
+}
+
+#details .item__header {
+    color: #cb2a1d;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+#details .item__txt {
+    line-height: 1.6;
+    color: #353535;
+}
+
+#details .item__title {
+    color: #cb2a1d;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 20px 0 12px;
+}
+
+#details ul li {
+    margin-bottom: 10px;
+}
+
+#details ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #000; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: .2em; /* Also needed for space (tweak if needed) */
+  }
+
+  #gallery .gallery-item {
+    width: calc((100% - 16px)/4);;
+  } 
+
+   #gallery .gallery-item img {
+    height: 100%;
+}
+
+@media(max-width: 992px) {
+    #explore .explore-description {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    #explore .explore-img {
+        width: 100%;
+    }
+
+    #gallery .gallery-item {
+        width: calc((100% - 8px)/2);
+    }
+}
+
+@media(max-width: 768px) {}
+
+@media(max-width: 576px) {
+    #gallery .gallery-item {
+        width: 100%;
+        margin: 0 0 4px 0;
+    }
+}

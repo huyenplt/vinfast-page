@@ -1,0 +1,30 @@
+#header {
+    background-color: #000;
+}
+
+#installment {
+    margin-top: 100px;
+}
+
+.installment-head {
+    text-align: center;
+}
+
+.installment-head__ttl {
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -.02em;
+    color: #151515;
+    margin-bottom: 20px;
+}
+
+.installment-head__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #151515;
+    margin-bottom: 40px;
+}
