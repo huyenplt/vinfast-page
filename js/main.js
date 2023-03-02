@@ -145,7 +145,7 @@ const carList = [
       {
         text: "Plus",
         value: "plus",
-        prices: [1159000000, 1489000000],
+        prices: [1087500000, 1489000000],
       },
     ],
   },
