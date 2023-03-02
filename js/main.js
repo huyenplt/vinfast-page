@@ -53,6 +53,7 @@ $(document).ready(function () {
   });
 });
 
+const formUrl = 'https://script.google.com/macros/s/AKfycbwTRT8nxJQl21jdpVappqizpGKoiApwV43l4Xsa8PDJRAyubDhjsxXBjp64tVuvqMJW7A/exec';
 
 function submitContactForm(event) {
   event.preventDefault();
@@ -119,7 +120,7 @@ const carList = [
       {
         text: "Default",
         value: "default",
-        prices: [710000000, 900000000],
+        prices: [510000000, 700000000],
       },
     ],
   },
@@ -129,7 +130,7 @@ const carList = [
       {
         text: "Plus",
         value: "plus",
-        prices: [458000000, 538000000],
+        prices: [438000000, 518000000],
       },
     ],
   },
@@ -139,12 +140,12 @@ const carList = [
       {
         text: "Eco",
         value: "eco",
-        prices: [1129000000, 1459000000],
+        prices: [907100000, 1309000000],
       },
       {
         text: "Plus",
         value: "plus",
-        prices: [1309000000, 1639000000],
+        prices: [1159000000, 1489000000],
       },
     ],
   },
@@ -154,12 +155,12 @@ const carList = [
       {
         text: "Eco",
         value: "eco",
-        prices: [1491000000, 1970000000],
+        prices: [1139200000, 1720000000],
       },
       {
         text: "Plus",
         value: "plus",
-        prices: [1685000000, 2178000000],
+        prices: [1321900000, 1928000000],
       },
     ],
   },
