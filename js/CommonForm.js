@@ -27,7 +27,7 @@ bookingModal.addEventListener('show.bs.modal', event => {
         $('#buyModal p.noti.success')[0].innerHTML = '';
   })
 
-const formUrl = 'https://script.google.com/macros/s/AKfycbwTRT8nxJQl21jdpVappqizpGKoiApwV43l4Xsa8PDJRAyubDhjsxXBjp64tVuvqMJW7A/exec';
+// const formUrl = 'https://script.google.com/macros/s/AKfycbwTRT8nxJQl21jdpVappqizpGKoiApwV43l4Xsa8PDJRAyubDhjsxXBjp64tVuvqMJW7A/exec';
 
 function submitBookingForm(event) {
   event.preventDefault();
